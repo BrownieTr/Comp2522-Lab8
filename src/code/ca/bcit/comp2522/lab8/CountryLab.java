@@ -26,6 +26,8 @@ public class CountryLab
         final Set<Character> letterSet;
         final List<String> uniqueFirstLetter;
 
+        final long lineCount;
+
         path = Paths.get("src", "week8countries.txt");
         dirPath = Paths.get("src", "matches");
         dataPath = Paths.get("src", "matches", "data.txt");
@@ -102,6 +104,12 @@ public class CountryLab
         Files.write(dataPath, List.of("Unique First Letters:"), StandardOpenOption.APPEND);
         Files.write(dataPath, uniqueFirstLetter, StandardOpenOption.APPEND);
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Number of Countries"), StandardOpenOption.APPEND);
+        lineCount = Files.lines(path).count();
+        String lineCounted = "" + lineCount;
+        Files.write(dataPath, List.of(lineCounted), StandardOpenOption.APPEND);
+
 
         for(String line : lines) {
             System.out.println(line);
