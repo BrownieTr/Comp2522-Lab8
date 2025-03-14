@@ -970,3 +970,6 @@ saint vincent and the grenadines: 32 characters
 tonga: 5 characters
 barbados: 8 characters
 
+Does a Country contain the letter Z
+true
+

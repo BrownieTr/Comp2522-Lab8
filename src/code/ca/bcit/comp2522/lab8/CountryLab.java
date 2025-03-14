@@ -29,6 +29,7 @@ public class CountryLab
         final List<String> moreThan1Word;
         final List<String> countryWithCharacterCount;
         final List<String> containsZ;
+        final List<String> longerThan3;
 
         final Map<String,Integer> characterCount = new HashMap<String,Integer>();
 
@@ -171,6 +172,19 @@ public class CountryLab
             Files.write(dataPath, List.of("false"), StandardOpenOption.APPEND);
         }
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Are of the country names longer than 3 characters"), StandardOpenOption.APPEND);
+        longerThan3 = lines.stream()
+                           .filter(n -> n.length() > 3)
+                .toList();
+        if(!longerThan3.isEmpty())
+        {
+            Files.write(dataPath, List.of("true"), StandardOpenOption.APPEND);
+
+        } else
+        {
+            Files.write(dataPath, List.of("false"), StandardOpenOption.APPEND);
+        }
 
 
 

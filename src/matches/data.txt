@@ -973,3 +973,5 @@ barbados: 8 characters
 Does a Country contain the letter Z
 true
 
+Are of the country names longer than 3 characters
+true
