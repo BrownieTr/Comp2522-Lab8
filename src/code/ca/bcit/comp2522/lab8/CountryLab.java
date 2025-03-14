@@ -28,6 +28,7 @@ public class CountryLab
         final List<String> upperCaseName = new ArrayList<>();
         final List<String> moreThan1Word;
         final List<String> countryWithCharacterCount;
+        final List<String> containsZ;
 
         final Map<String,Integer> characterCount = new HashMap<String,Integer>();
 
@@ -147,17 +148,32 @@ public class CountryLab
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
 
         Files.write(dataPath, List.of("Countries with their character count"), StandardOpenOption.APPEND);
-
         for(String line : lines)
         {
             characterCount.put(line.toLowerCase(), line.length());
         }
         countryWithCharacterCount = characterCount.entrySet()
                 .stream()
-                .map(entry -> entry.getKey() + ": " + entry.getValue())
+                .map(entry -> entry.getKey() + ": " + entry.getValue() + " characters")
                                                   .toList();
         Files.write(dataPath, countryWithCharacterCount, StandardOpenOption.APPEND);
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Does a Country contain the letter Z"), StandardOpenOption.APPEND);
+        containsZ = lines.stream()
+                             .filter(n -> n.contains("Z"))
+                             .toList();
+        if(!containsZ.isEmpty())
+        {
+            Files.write(dataPath, List.of("true"), StandardOpenOption.APPEND);
+        } else
+        {
+            Files.write(dataPath, List.of("false"), StandardOpenOption.APPEND);
+        }
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+
+
         for(String line : lines) {
             System.out.println(line);
         }
