@@ -26,6 +26,7 @@ public class CountryLab
         final List<String> longestCountry;
         final List<String> shortestCountry;
         final List<String> upperCaseName = new ArrayList<>();
+        final List<String> moreThan1Word;
 
         final long lineCount;
 
@@ -134,6 +135,14 @@ public class CountryLab
         }
         Files.write(dataPath, upperCaseName, StandardOpenOption.APPEND);
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Countries with more than 1 word"), StandardOpenOption.APPEND);
+        moreThan1Word = lines.stream()
+                .filter(n -> n.contains(" "))
+                .toList();
+        Files.write(dataPath, moreThan1Word, StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
 
 
         for(String line : lines) {
