@@ -3,11 +3,8 @@ package ca.bcit.comp2522.lab8;
 import java.io.File;
 import java.nio.file.*;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.Set;
 
 public class CountryLab
 {
@@ -27,6 +24,8 @@ public class CountryLab
         final Set<Character> letterSet;
         final List<String> uniqueFirstLetter;
         final List<String> longestCountry;
+        final List<String> shortestCountry;
+        final List<String> upperCaseName = new ArrayList<>();
 
         final long lineCount;
 
@@ -119,6 +118,22 @@ public class CountryLab
                                                         .max(Comparator.comparingInt(String::length))
                                                         .get());
         Files.write(dataPath, longestCountry, StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Shortest Country Name"), StandardOpenOption.APPEND);
+        shortestCountry = Collections.singletonList(lines.stream()
+                                                         .min(Comparator.comparingInt(String::length))
+                                                         .get());
+        Files.write(dataPath, shortestCountry, StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Country names in upper case"), StandardOpenOption.APPEND);
+        for(String line : lines)
+        {
+            upperCaseName.add(line.toUpperCase());
+        }
+        Files.write(dataPath, upperCaseName, StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
 
 
         for(String line : lines) {
