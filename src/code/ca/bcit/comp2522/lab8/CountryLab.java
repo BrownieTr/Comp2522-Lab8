@@ -3,6 +3,7 @@ package ca.bcit.comp2522.lab8;
 import java.io.File;
 import java.nio.file.*;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,6 +26,7 @@ public class CountryLab
         final List<String> sortedNameDesc;
         final Set<Character> letterSet;
         final List<String> uniqueFirstLetter;
+        final List<String> longestCountry;
 
         final long lineCount;
 
@@ -109,6 +111,14 @@ public class CountryLab
         lineCount = Files.lines(path).count();
         String lineCounted = "" + lineCount;
         Files.write(dataPath, List.of(lineCounted), StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
+
+        Files.write(dataPath, List.of("Longest Country Name"), StandardOpenOption.APPEND);
+
+        longestCountry = Collections.singletonList(lines.stream()
+                                                        .max(Comparator.comparingInt(String::length))
+                                                        .get());
+        Files.write(dataPath, longestCountry, StandardOpenOption.APPEND);
 
 
         for(String line : lines) {
