@@ -6,7 +6,7 @@ import java.nio.file.*;
 import java.io.IOException;
 import java.util.List;
 
-public class CountryLabTest {
+class CountryLabTest {
 
     Path matchesDir = Paths.get("matches");
     Path dataFile = matchesDir.resolve("data.txt");
@@ -15,15 +15,15 @@ public class CountryLabTest {
     public void setUp() throws IOException {
         // Clean up before running each test
         if (Files.exists(dataFile))
-		{			
+		{
 			Files.delete(dataFile);
 		}
-		
-        if (Files.exists(matchesDir)) 
+
+        if (Files.exists(matchesDir))
 		{
 			Files.delete(matchesDir);
 		}
-		
+
         CountryLab.main(null); // Run the main method to generate output
     }
 
