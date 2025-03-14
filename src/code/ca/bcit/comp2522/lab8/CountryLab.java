@@ -27,6 +27,9 @@ public class CountryLab
         final List<String> shortestCountry;
         final List<String> upperCaseName = new ArrayList<>();
         final List<String> moreThan1Word;
+        final List<String> countryWithCharacterCount;
+
+        final Map<String,Integer> characterCount = new HashMap<String,Integer>();
 
         final long lineCount;
 
@@ -143,8 +146,18 @@ public class CountryLab
         Files.write(dataPath, moreThan1Word, StandardOpenOption.APPEND);
         Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
 
+        Files.write(dataPath, List.of("Countries with their character count"), StandardOpenOption.APPEND);
 
-
+        for(String line : lines)
+        {
+            characterCount.put(line.toLowerCase(), line.length());
+        }
+        countryWithCharacterCount = characterCount.entrySet()
+                .stream()
+                .map(entry -> entry.getKey() + ": " + entry.getValue())
+                                                  .toList();
+        Files.write(dataPath, countryWithCharacterCount, StandardOpenOption.APPEND);
+        Files.write(dataPath, List.of(""), StandardOpenOption.APPEND);
         for(String line : lines) {
             System.out.println(line);
         }

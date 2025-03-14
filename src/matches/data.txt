@@ -768,3 +768,205 @@ United Kingdom
 United States
 Vatican City
 
+Countries with their character count
+belarus: 7
+czech republic (czechia): 24
+japan: 5
+east timor: 10
+south africa: 12
+gambia: 6
+guinea: 6
+saint kitts and nevis: 21
+san marino: 10
+estonia: 7
+dominican republic: 18
+philippines: 11
+cuba: 4
+mauritius: 9
+mali: 4
+switzerland: 11
+armenia: 7
+vietnam: 7
+australia: 9
+laos: 4
+northern ireland: 16
+solomon islands: 15
+turkey: 6
+ukraine: 7
+austria: 7
+united states: 13
+cambodia: 8
+monaco: 6
+hungary: 7
+kenya: 5
+greece: 6
+paraguay: 8
+palau: 5
+congo, republic of the: 22
+vanuatu: 7
+cyprus: 6
+colombia: 8
+azerbaijan: 10
+syria: 5
+rwanda: 6
+libya: 5
+burkina faso: 12
+afghanistan: 11
+norway: 6
+kiribati: 8
+dominica: 8
+bulgaria: 8
+south korea: 11
+bahrain: 7
+guatemala: 9
+ghana: 5
+scotland: 8
+somalia: 7
+jamaica: 7
+togo: 4
+liechtenstein: 13
+thailand: 8
+france: 6
+serbia: 6
+senegal: 7
+zambia: 6
+comoros: 7
+namibia: 7
+taiwan: 6
+canada: 6
+honduras: 8
+cote d'ivoire (ivory coast): 27
+maldives: 8
+chile: 5
+oman: 4
+vatican city: 12
+brazil: 6
+guyana: 6
+lesotho: 7
+germany: 7
+myanmar (burma): 15
+india: 5
+malaysia: 8
+peru: 4
+trinidad and tobago: 19
+denmark: 7
+sri lanka: 9
+belize: 6
+nauru: 5
+kuwait: 6
+slovenia: 8
+haiti: 5
+zimbabwe: 8
+el salvador: 11
+saint lucia: 11
+bolivia: 7
+china: 5
+antigua and barbuda: 19
+brunei: 6
+israel: 6
+bangladesh: 10
+north macedonia (macedonia): 27
+ireland: 7
+albania: 7
+poland: 6
+united arab emirates: 20
+botswana: 8
+andorra: 7
+venezuela: 9
+marshall islands: 16
+malawi: 6
+moldova: 7
+russia: 6
+sweden: 6
+north korea: 11
+madagascar: 10
+cape verde: 10
+turkmenistan: 12
+iran: 4
+iraq: 4
+seychelles: 10
+indonesia: 9
+nicaragua: 9
+equatorial guinea: 17
+ethiopia: 8
+federated states of micronesia: 30
+ecuador: 7
+guinea-bissau: 13
+saudi arabia: 12
+mauritania: 10
+spain: 5
+algeria: 7
+congo, democratic republic of the: 33
+mozambique: 10
+cameroon: 8
+portugal: 8
+costa rica: 10
+lithuania: 9
+south sudan: 11
+panama: 6
+lebanon: 7
+luxembourg: 10
+mongolia: 8
+italy: 5
+finland: 7
+bosnia and herzegovina: 22
+benin: 5
+eswatini (swaziland): 20
+nigeria: 7
+sudan: 5
+chad: 4
+liberia: 7
+djibouti: 8
+tajikistan: 10
+fiji: 4
+singapore: 9
+mexico: 6
+samoa: 5
+tunisia: 7
+bahamas: 7
+bhutan: 6
+uganda: 6
+uruguay: 7
+gabon: 5
+niger: 5
+kyrgyzstan: 10
+pakistan: 8
+kosovo: 6
+georgia: 7
+yemen: 5
+argentina: 9
+jordan: 6
+burundi: 7
+slovakia: 8
+belgium: 7
+uzbekistan: 10
+tanzania: 8
+england: 7
+grenada: 7
+netherlands: 11
+sao tome and principe: 21
+wales: 5
+eritrea: 7
+croatia: 7
+nepal: 5
+morocco: 7
+suriname: 8
+central african republic: 24
+romania: 7
+angola: 6
+new zealand: 11
+sierra leone: 12
+latvia: 6
+kazakhstan: 10
+egypt: 5
+united kingdom: 14
+malta: 5
+iceland: 7
+montenegro: 10
+papua new guinea: 16
+tuvalu: 6
+qatar: 5
+saint vincent and the grenadines: 32
+tonga: 5
+barbados: 8
+
